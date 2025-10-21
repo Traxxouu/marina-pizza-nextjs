@@ -72,8 +72,8 @@ export default function ContactForm() {
         {isSubmitting ? (<><Loader2 className="animate-spin" size={20} />Envoi en cours...</>) : 'Envoyer le message'}
       </button>
 
-      {submitStatus === 'success' && <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">✅ Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.</div>}
-      {submitStatus === 'error' && <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">❌ Une erreur s'est produite. Veuillez réessayer ou nous appeler directement.</div>}
+  {submitStatus === 'success' && <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">✅ Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.</div>}
+  {submitStatus === 'error' && <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">❌ Une erreur s&apos;est produite. Veuillez réessayer ou nous appeler directement.</div>}
     </form>
   );
 }

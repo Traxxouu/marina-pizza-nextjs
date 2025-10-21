@@ -57,7 +57,7 @@ export default async function ContactPage() {
                 <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
                   <Clock className="text-red-600 flex-shrink-0 mt-1" size={24} />
                   <div>
-                    <h3 className="font-semibold text-gray-800 mb-2">Horaires d'ouverture</h3>
+                    <h3 className="font-semibold text-gray-800 mb-2">Horaires d&apos;ouverture</h3>
                     <div className="space-y-1 text-gray-600">
                       {settings?.openingHours?.map((schedule, index) => (
                         <div key={index} className="flex justify-between gap-4">

@@ -59,12 +59,12 @@ export default async function ZonesLivraisonPage() {
               ))}
             </div>
           ) : (
-            <p className="text-gray-600">Aucune zone de livraison configurée. Contactez-nous pour plus d'informations.</p>
+            <p className="text-gray-600">Aucune zone de livraison configurée. Contactez-nous pour plus d&apos;informations.</p>
           )}
 
           <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
-            <p className="text-gray-700">
-              <strong className="text-blue-800">Note :</strong> Votre ville n'apparaît pas dans la liste ?{' '}
+              <p className="text-gray-700">
+              <strong className="text-blue-800">Note :</strong> Votre ville n&apos;apparaît pas dans la liste ?{' '}
               Contactez-nous au <a href={`tel:${settings?.phone}`} className="text-blue-600 hover:underline font-semibold">{settings?.phone}</a> pour vérifier si nous pouvons vous livrer.
             </p>
           </div>

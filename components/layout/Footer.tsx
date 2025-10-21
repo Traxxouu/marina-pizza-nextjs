@@ -10,7 +10,7 @@ interface FooterProps {
 export default function Footer({ settings }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
-  if (!settings) {
+    if (!settings) {
     return (
       <footer className="bg-gray-900 text-white mt-16">
         <div className="container mx-auto px-4 py-12 text-center">
@@ -40,7 +40,7 @@ export default function Footer({ settings }: FooterProps) {
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-4">Horaires d'ouverture</h3>
+            <h3 className="text-xl font-bold mb-4">Horaires d&apos;ouverture</h3>
             <div className="space-y-2 text-gray-300">
               {settings.openingHours?.map((schedule, index) => (
                 <div key={index} className="flex justify-between"><span className="font-medium">{schedule.day}</span><span>{schedule.hours}</span></div>

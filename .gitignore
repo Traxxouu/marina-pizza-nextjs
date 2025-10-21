@@ -31,3 +31,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ignore build artifacts and sanity runtime
+/dist/
+/.sanity/

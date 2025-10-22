@@ -27,7 +27,7 @@ export default async function ContactPage() {
 
               <div className="space-y-4">
                 <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
-                  <MapPin className="text-red-600 flex-shrink-0 mt-1" size={24} />
+                  <MapPin className="text-red-600 shrink-0 mt-1" size={24} />
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Adresse</h3>
                     <p className="text-gray-600">
@@ -39,7 +39,7 @@ export default async function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
-                  <Phone className="text-red-600 flex-shrink-0 mt-1" size={24} />
+                  <Phone className="text-red-600 shrink-0 mt-1" size={24} />
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Téléphone</h3>
                     <a href={`tel:${settings?.phone}`} className="text-red-600 hover:text-red-700 font-medium">{settings?.phone}</a>
@@ -47,7 +47,7 @@ export default async function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
-                  <Mail className="text-red-600 flex-shrink-0 mt-1" size={24} />
+                  <Mail className="text-red-600 shrink-0 mt-1" size={24} />
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
                     <a href={`mailto:${settings?.email}`} className="text-red-600 hover:text-red-700 font-medium">{settings?.email}</a>
@@ -55,7 +55,7 @@ export default async function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
-                  <Clock className="text-red-600 flex-shrink-0 mt-1" size={24} />
+                  <Clock className="text-red-600 shrink-0 mt-1" size={24} />
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-2">Horaires d&apos;ouverture</h3>
                     <div className="space-y-1 text-gray-600">

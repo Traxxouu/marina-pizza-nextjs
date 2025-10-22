@@ -17,7 +17,7 @@ export default async function HomePage() {
 
   return (
     <div>
-      <section className="bg-gradient-to-br from-red-600 to-red-800 text-white py-20">
+  <section className="bg-linear-to-br from-red-600 to-red-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -86,7 +86,7 @@ export default async function HomePage() {
         )}
 
         
-        <section className="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-2xl p-12 text-center">
+  <section className="bg-linear-to-r from-red-600 to-red-700 text-white rounded-2xl p-12 text-center">
           <h2 className="text-4xl font-bold mb-4">Prêt à commander ?</h2>
           <p className="text-xl mb-8 text-red-100">
             Appelez-nous pour passer votre commande ou pour plus d&apos;informations

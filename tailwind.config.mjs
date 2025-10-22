@@ -1,4 +1,4 @@
-import { fontFamily } from 'tailwindcss/defaultTheme';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -26,8 +26,8 @@ const config = {
         }
       },
       fontFamily: {
-        sans: ['Inter', ...fontFamily.sans],
-        display: ['Poppins', ...fontFamily.sans]
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        display: ['Poppins', ...defaultTheme.fontFamily.sans]
       },
       boxShadow: {
         card: '0 6px 18px rgba(16,24,40,0.08)'

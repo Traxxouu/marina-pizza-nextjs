@@ -1,27 +1,4 @@
 
-// Removed comments for cleaner code
-export interface Product {
-  _id: string;
-  _type: 'product';
-  name: string;
-  description: string;
-  price: number;
-  image?: {
-    asset: {
-      _ref: string;
-      _type: 'reference';
-    };
-  };
-  category: {
-    _ref: string;
-    _type: 'reference';
-  };
-  allergenes?: string[];
-  available: boolean;
-  featured?: boolean;
-}
-
-// Removed comments for cleaner code
 export interface Product {
   _id: string;
   _type: 'product';
@@ -53,6 +30,13 @@ export interface Category {
   description?: string;
   order: number;
   icon?: string;
+  image?: {
+    asset: {
+      _ref: string;
+      _type: 'reference';
+    };
+    hotspot?: { x: number; y: number };
+  };
 }
 
 export interface Notification {

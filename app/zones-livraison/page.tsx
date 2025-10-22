@@ -20,7 +20,7 @@ export default async function ZonesLivraisonPage() {
           <p className="text-xl text-gray-600">Livraison gratuite à partir de 15€ de commande</p>
         </div>
 
-        <div className="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-xl p-8 mb-12 shadow-xl">
+  <div className="bg-linear-to-r from-red-600 to-red-700 text-white rounded-xl p-8 mb-12 shadow-xl">
           <div className="grid md:grid-cols-2 gap-6">
             <div className="flex items-start gap-4">
               <Clock className="shrink-0 mt-1" size={32} />

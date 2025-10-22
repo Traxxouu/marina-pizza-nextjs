@@ -41,6 +41,13 @@ export default defineType({
       type: 'string',
       description: 'Ex: 🍕 🥗 🍔 🥤',
     }),
+    defineField({
+      name: 'image',
+      title: 'Image de catégorie',
+      type: 'image',
+      options: { hotspot: true },
+      description: 'Image representant la catégorie (utilisée sur la page d\'accueil)',
+    }),
   ],
   preview: {
     select: {

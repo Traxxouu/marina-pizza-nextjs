@@ -19,29 +19,29 @@ export default async function HomePage() {
 
   return (
     <div>
-  <section className="bg-linear-to-br from-red-600 to-red-800 text-white py-20">
+  <section className="bg-linear-to-br from-red-600 to-red-800 text-white py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl md:text-6xl font-display font-extrabold mb-4 leading-tight">
               Les Meilleures Pizzas de Thiais
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-red-100">
-              Pizzas artisanales, pâtes fraîches, ingrédients de qualité 🍕
+            <p className="text-lg md:text-xl mb-8 text-red-100 max-w-2xl mx-auto">
+              Pizzas artisanales préparées chaque jour avec des ingrédients sélectionnés pour leur fraîcheur et leur goût.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:0146802120"
-                className="bg-white text-red-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition flex items-center justify-center gap-2"
+                className="bg-white text-brand-700 px-6 py-3 rounded-md font-semibold text-lg hover:bg-gray-100 transition flex items-center justify-center gap-3"
               >
-                <Phone size={24} />
-                01 46 80 21 20
+                <Phone size={20} />
+                Commander
               </a>
               <Link
                 href="/menu/pizzas"
-                className="bg-red-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-400 transition flex items-center justify-center gap-2"
+                className="bg-brand-700 text-white px-6 py-3 rounded-md font-semibold text-lg hover:bg-brand-500 transition flex items-center justify-center gap-3"
               >
                 Voir le menu
-                <ArrowRight size={24} />
+                <ArrowRight size={20} />
               </Link>
             </div>
           </div>

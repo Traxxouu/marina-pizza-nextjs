@@ -1,8 +1,10 @@
 // app/page.tsx
 import Link from 'next/link';
+import Image from 'next/image';
 import { client, queries } from '@/lib/sanity';
 import { Product, Category, Notification } from '@/lib/types';
 import ProductCard from '@/components/ui/ProductCard';
+import { urlFor } from '@/lib/sanity';
 import NotificationBanner from '@/components/ui/NotificationBanner';
 import { ArrowRight, Phone } from 'lucide-react';
 
@@ -64,7 +66,15 @@ export default async function HomePage() {
                 href={`/menu/${category.slug.current}`}
                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition text-center group"
               >
-                <div className="text-5xl mb-3">{category.icon || '🍽️'}</div>
+                <div className="mb-3 flex items-center justify-center">
+                  {category.image ? (
+                    <div className="relative w-20 h-20 rounded-full overflow-hidden mx-auto">
+                      <Image src={urlFor(category.image).width(160).height(160).url()} alt={category.name} fill className="object-cover" />
+                    </div>
+                  ) : (
+                    <div className="text-5xl">{category.icon || '🍽️'}</div>
+                  )}
+                </div>
                 <h3 className="font-bold text-gray-800 group-hover:text-red-600 transition">
                   {category.name}
                 </h3>

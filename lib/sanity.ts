@@ -47,7 +47,8 @@ export const queries = {
       description,
       price,
       image,
-      category->{name, slug}
+      category->{name, slug},
+      available
     }
   `,
 
